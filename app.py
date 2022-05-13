@@ -1,6 +1,6 @@
 import streamlit as st
 from fastai.vision.all import *
-import plotly.express as px
+
 
 st.title('COUCH, BED, TABLE prediction...')
 
@@ -31,7 +31,5 @@ if file:
     st.success(f"Bashorat:{pred}")
     st.info(f'Ehtimolligi:{probs[pred_id]}')
 
-    fig = px.bar(x = probs*100 , y = model.dls.vocab)
-    st.plotly_chart(fig)
-
+  
 
