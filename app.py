@@ -11,10 +11,10 @@ import platform
 from fastai.vision.core import PILImage
 
 
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
-# plt = platform.system()
-# if plt == 'Linux':pathlib.WindowsPath = pathlib.PosixPath
+# temp = pathlib.PosixPath
+# pathlib.PosixPath = pathlib.WindowsPath
+plt = platform.system()
+if plt == 'Linux':pathlib.WindowsPath = pathlib.PosixPath
 
 
 
