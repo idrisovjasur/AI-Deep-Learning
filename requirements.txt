@@ -1,2 +1,2 @@
 fastai==2.5.3
-plotliy==5.5.0
+plotliy==5.7.0
